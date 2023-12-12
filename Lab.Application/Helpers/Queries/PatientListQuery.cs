@@ -9,6 +9,8 @@ namespace Lab.Application.Helpers.Queries
 {
     public class PatientListQuery: IRequest<List<PatientDto>>
     {
+        public int Id {  get; set; }
         public PatientListQuery() { }
+        public PatientListQuery(int id) { Id = id; }
     }
 }
